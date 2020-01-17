@@ -1,0 +1,76 @@
+﻿@model OnlineTestSystem.Models.RegisterUser
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register Into Online TestSystem</h2>
+<hr />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-8">
+            <img src="~/images/logo2.jfif" alt="site logo" />
+            <form style="padding-left:30px;" id="myform">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" class="form-control" name="Username" placeholder="Username" />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="Email" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="Password" placeholder="Password" />
+                </div>
+
+                <button class="btn btn-danger" >@Html.ActionLink("Cancel", "Index")</button>
+                &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+                &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+                &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+                &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+                &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+                &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+
+                <button class="btn btn-success" onclick="Register()" > Register</button>
+            </form>
+            @*@{ 
+                if (IsPost)
+                {
+                    string Username = Request["Username"];
+                    string Email = Request["Email"];
+                    string password = Request["Password"];
+
+                    <p>you enter : <br />
+                        name : @Username <br />
+                           Eamil: @Email <br />
+                            Password:@password
+                    </p>
+                }
+                }*@
+               
+                
+            
+         
+        </div>
+        
+    </div>
+</div>
+<script>
+    var Register = function () {
+        debugger
+        var data = $("#myform").serialize();
+        $.ajax({
+            type: "Post",
+            url: "/Home/Register",
+            data: data,
+            success: function (response) {
+                alert("Succes");
+            }
+        })
+    }
+
+
+</script>

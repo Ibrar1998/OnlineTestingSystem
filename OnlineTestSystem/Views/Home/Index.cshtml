@@ -1,0 +1,301 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Knowledge is Power.Test It.</h2>
+        </div>
+        <div class="col-sm-4">
+            <br />
+            <form class="form-inline">
+                <input class="form-control" type="text" placeholder="Search">
+                <span> <button class="btn btn-success">Go</button></span>
+            </form>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <img class="img-fluid" src="~/images/screen.jpg" width="500" alt="computer screen">
+        </div>
+        <div class="col-sm-4">
+            <br /><br />
+            <img src="~/images/logo2.jfif" width="250" />
+            <h2>Sign in to OTS</h2>
+
+            <div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="username">UserName</label>
+                        <input type="text" class="form-control" id="username" placeholder="UserName">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success w-50"> Sign in</button>
+                    </div>
+                </form>
+
+            </div>
+            <div>
+                <span><b>new to OTS ?</b></span> @Html.ActionLink("Create One","Register","")
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="container">
+    <div class="row">
+        <div>
+            <img src="~/images/imagefixed.jpg" alt="background" width="1150" height="200" />
+
+        </div>
+
+    </div>
+ </div>
+    <br /><br />
+    <div class="container">
+        <div class="row">
+            @*video animation*@
+            <div class="col-sm-6">
+                <video width="580" controls>
+                    <source src="~/video/video1.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            @*slider animation*@
+            <div class="col-sm-6">
+
+                <div id="myCarousel" class="carousel slide " data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="~/images/1.jpg" alt="Los Angeles">
+                        </div>
+
+                        <div class="item">
+                            <img src="~/images/2.jpg" alt="Chicago">
+                        </div>
+
+                        <div class="item">
+                            <img src="~/images/5.jpg" alt="New york">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @*// image background fixed*@
+
+    <br /><br />
+    @*// description*@
+    <div class="container" style="background-color:#f8f8f8;">
+        <div class="row">
+            <h1 style="text-align:center;padding-top:30px;">A new innovation in online examination</h1>
+            <p style="text-align:center;">
+                Smooth registration, swift creation of <br />
+                tests and synchronized user- interface for you and your candidates.
+            </p>
+        </div>
+        <br /><br />
+        <div class="row">
+            <div class="col-sm-4">
+
+                <h3 style="text-align:center;">Easy to Learn and Use</h3>
+                <p style="text-align:center;">
+                    One-stop-destination for examination, preparation,recruitment,
+                    and more. Specially designed online examination system to
+                    solve all your preparation worries. The platform is smooth to
+                    use with a translational flow of information.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3 style="text-align:center;">Highly Interactive Interface</h3>
+                <p style="text-align:center;">
+                    A click to the next trick, simple registration,
+                    easy test and quiz creation, signing- in, synchronized processing,
+                    secured encoding and decoding of information and more.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3 style="text-align:center;">Advanced Reporting System</h3>
+                <p style="text-align:center;">
+                    Instant scorecard generation, computational analysis,
+                    efficient feedback sharing to boost up your performance and
+                    precision. An ultimate combination of detailed and drilled methodologies
+                    that will eventually complement your skills and grades.
+                </p>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        @*//second description*@
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 style="text-align:center;">Splendid Support</h3>
+                <p style="text-align:center;">
+                    Your request and our actions to strive triggered support.
+                    A dedicated team is working round the clock to provide 24 X 7
+                    streamlined access to our technical experts.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3 style="text-align:center;">Smart Subscriptions</h3>
+                <p style="text-align:center;">
+                    Premium selection to the suited subscription
+                    that will match your preferences and priorities of using
+                    the online assessment platform.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3 style="text-align:center;">Active Accessibility</h3>
+                <p style="text-align:center;">
+                    Go wherever you want to and practice whenever you want,
+                    using the next level online exam platform. Create & assign
+                    tests and quiz from anywhere at any time. Experience a lag-free
+                    synchronized performance of think exam on your mobile devices.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+    @*//cards*@
+    <div class="container">
+        <h3 style="text-align:center;">Other things you ma interrest</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-thumbnail" src="~/images/image1.jpg" alt="Thumbnail image">
+                <h2>Proctored exam meaning</h2>
+                <p>
+                    Have you ever wondered what is the meaning of this fancy word –
+                    proctored? Is it better to give proctored or non-proctored exams? How can cheating be
+                    avoided (in both situations)? Before you get even more confused, let us dive in and try
+                    to finally understand this.
+                </p>
+                <a href="#">Read more ></a>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-thumbnail" src="~/images/image2.jfif" alt="Thumbnail image">
+                <h2>Proctored exam meaning</h2>
+                <p>
+                    To quote Johan Cruijff, one of the greatest football players ever:
+                    "elk voordeel heb zijn nadeel", Dutch for "Every advantage
+                    has a disadvantage". This also is true for an online examination system.
+                </p>
+                <a href="#">Read more ></a>
+
+            </div>
+            <div class="col-sm-4">
+                <img class="img-thumbnail" src="~/images/image3.jfif" alt="Thumbnail image">
+                <h2>What's the difference between a test and examination?</h2>
+                <p>
+                    A test and an exam both tests the knowledge of a student. So,
+                    in most cases tests and exams are synonyms. Both test the knowledge of the
+                    students with a series of questions and will grade the questions to get a result.
+
+                    They differ in one aspect: an exam is more formal then a test.
+                </p>
+                <a href="#">Read more ></a>
+
+            </div>
+        </div>
+    </div>
+    <br /><br />
+    @*footer*@
+    <div style="background-color:#2e2c2c;">
+        <div style="background-image:url(https://www.tutorialspoint.com/images/pattern-xv.png);background-color:#0d0c0c;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 style="color:#706b6b;text-align:center;"> Mobile First</h3>
+                    <ul style="margin:20px;list-style-type:disc;">
+                        <li><a class="iphone" href="https://itunes.apple.com/us/app/tutorials-point/id914891263?ls=1&amp;mt=8" target="_blank" rel="nofollow"><img alt="tutorialspoint iPhone App" src="https://www.tutorialspoint.com/images/apple_store.jpg" title="tutorialspoint iPhone App" class="mobile-apps"></a></li>
+                        <br />
+                        <li><a class="android" href="https://play.google.com/store/apps/details?id=com.tutorialspoint.onlineviewer" target="_blank" rel="nofollow"><img src="https://www.tutorialspoint.com/images/google_play.jpg" alt="tutorialspoint Android app" title="tutorialspoint Android app" class="mobile-apps"></a></li>
+                        <br />
+                        <li><a class="microsoft" href="http://www.windowsphone.com/s?appid=91249671-7184-4ad6-8a5f-d11847946b09" target="_blank" rel="nofollow"><img src="https://www.tutorialspoint.com/images/windows_store.jpg" alt="tutorialspoint Windows app" title="tutorialspoint Windows app" class="mobile-apps"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3 style="color:#706b6b;text-align:center;">About Us</h3>
+                    <br />
+                    <ul style="list-style-type:none;">
+                        <li><i class="glyphicon glyphicon-check " style="color:#918a8a;"></i> <a href="">Company</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">Our Team</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">Careers</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">Privacy Policy</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">Cookies Policy</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">Terms of use</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3 style="color:#706b6b;text-align:center;">Extra Links</h3>
+                    <br />
+                    <ul style="list-style-type:none;">
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">Dev Tools</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">Free Graphics</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">File Conversion</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">NetMeeting</a></li>
+                        <li><i class="glyphicon glyphicon-check" style="color:#918a8a;"></i> <a href="">Whiteboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3 style="color:#706b6b;text-align:center;">Contact Us</h3>
+                    <br />
+                    <ul style="list-style-type:none;">
+                        <li><p style="color:white;"> <strong>Address:</strong> UET Taxila ,Kicsit KRL Kahuta ,Rawalpindi </p></li>
+                        <li><p style="color:white;"> <strong>Website:</strong> <a href="http://www.tutorialspoint.com">www.tutorialspoint.com</a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="background-image:url(https://www.transparenttextures.com/patterns/black-linen.png);background-color:#2f2f2f;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 style="color:#706b6b;text-align:center;">Follow</h3>
+
+                </div>
+                <div class="col-sm-6">
+                    <h1 style="color:#918a8a;">Online Test System</h1>
+                    <p style="color:white;"><span>&copy; Copyright 2020. All Rights Reserved.</span></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+@*//sricpts*@
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>*@
